@@ -7,7 +7,7 @@ public class HelloWorld {
         var app = Javalin.create(config -> {
             config.bundledPlugins.enableDevLogging();
         });
-        app.get("/", ctx -> ctx.result("Hello World"));
+        app.get("/", ctx -> ctx.result("Hi wrld"));
         app.start(7070);
     }
 }
